@@ -1,0 +1,229 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'ungit' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /usr/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/lib/package.json
+6 silly cache add args [ 'ungit', null ]
+7 verbose cache add spec ungit
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'ungit',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'ungit',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed ungit@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for ungit
+11 info addNameTag [ 'ungit', 'latest' ]
+12 silly mapToRegistry name ungit
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'ungit',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'ungit',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/ungit
+17 verbose addNameTag registry:https://registry.npmjs.org/ungit not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/ungit
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 22:58:41
+21 verbose request id 09075ef2e9684354
+22 verbose etag "7LO8CJ06W7C45QMTWLLC1JKJ0"
+23 http request GET https://registry.npmjs.org/ungit
+24 http 304 https://registry.npmjs.org/ungit
+25 verbose headers { date: 'Wed, 08 Jun 2016 19:58:43 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   etag: '"7LO8CJ06W7C45QMTWLLC1JKJ0"',
+25 verbose headers   age: '0',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-ams4130-AMS',
+25 verbose headers   'x-cache': 'HIT',
+25 verbose headers   'x-cache-hits': '1',
+25 verbose headers   'x-timer': 'S1465415923.254092,VS0,VE173',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304,
+26 silly get   { date: 'Wed, 08 Jun 2016 19:58:43 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"7LO8CJ06W7C45QMTWLLC1JKJ0"',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-ams4130-AMS',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1465415923.254092,VS0,VE173',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/ungit from cache
+28 verbose get saving ungit to /home/kinasu/.npm/registry.npmjs.org/ungit/.cache.json
+29 verbose correctMkdir /home/kinasu/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for ungit with tag latest
+31 silly addNamed ungit@0.10.1
+32 verbose addNamed "0.10.1" is a plain semver version for ungit
+33 silly cache afterAdd ungit@0.10.1
+34 verbose afterAdd /home/kinasu/.npm/ungit/0.10.1/package/package.json not in flight; writing
+35 verbose correctMkdir /home/kinasu/.npm correctMkdir not in flight; initializing
+36 verbose afterAdd /home/kinasu/.npm/ungit/0.10.1/package/package.json written
+37 silly install resolved [ { name: 'ungit',
+37 silly install resolved     author: { name: 'Fredrik Norén', email: 'fredrik.jw.noren@gmail.com' },
+37 silly install resolved     description: 'Git made easy',
+37 silly install resolved     version: '0.10.1',
+37 silly install resolved     ungitPluginApiVersion: '0.2.0',
+37 silly install resolved     scripts: { start: 'node ./bin/ungit', test: 'grunt test' },
+37 silly install resolved     repository:
+37 silly install resolved      { type: 'git',
+37 silly install resolved        url: 'git+https://github.com/FredrikNoren/ungit.git' },
+37 silly install resolved     bin:
+37 silly install resolved      { ungit: './bin/ungit',
+37 silly install resolved        '0ungit-credentials-helper': './bin/credentials-helper' },
+37 silly install resolved     dependencies:
+37 silly install resolved      { async: '~1.5.2',
+37 silly install resolved        bluebird: '~3.2.2',
+37 silly install resolved        'blueimp-md5': '~2.1.0',
+37 silly install resolved        'body-parser': '~1.14.2',
+37 silly install resolved        color: '~0.11.1',
+37 silly install resolved        'cookie-parser': '~1.4.1',
+37 silly install resolved        crossroads: '~0.12.2',
+37 silly install resolved        diff2html: '~1.2.0',
+37 silly install resolved        express: '~4.13.4',
+37 silly install resolved        'express-session': '~1.13.0',
+37 silly install resolved        'forever-monitor': '~1.1.0',
+37 silly install resolved        getmac: '~1.0.7',
+37 silly install resolved        hasher: '~1.2.0',
+37 silly install resolved        'keen.io': '~0.1.3',
+37 silly install resolved        knockout: '~3.4.0',
+37 silly install resolved        lodash: '~4.2.1',
+37 silly install resolved        mkdirp: '~0.5.1',
+37 silly install resolved        moment: '~2.11.2',
+37 silly install resolved        'npm-registry-client': '~7.0.9',
+37 silly install resolved        npmconf: '~2.1.2',
+37 silly install resolved        octicons: '~3.4.1',
+37 silly install resolved        open: '~0.0.5',
+37 silly install resolved        'os-homedir': '~1.0.1',
+37 silly install resolved        passport: '~0.3.2',
+37 silly install resolved        'passport-local': '~1.0.0',
+37 silly install resolved        raven: '~0.10.0',
+37 silly install resolved        rc: '~1.1.6',
+37 silly install resolved        rimraf: '~2.5.1',
+37 silly install resolved        semver: '~5.1.0',
+37 silly install resolved        'serve-static': '~1.10.2',
+37 silly install resolved        signals: '~1.0.0',
+37 silly install resolved        snapsvg: '~0.4.0',
+37 silly install resolved        'socket.io': '~1.4.5',
+37 silly install resolved        superagent: '^0.21.0',
+37 silly install resolved        temp: '~0.8.3',
+37 silly install resolved        uuid: '~2.0.1',
+37 silly install resolved        winston: '~2.1.1',
+37 silly install resolved        yargs: '~3.32.0' },
+37 silly install resolved     devDependencies:
+37 silly install resolved      { 'ansi-color': '~0.2.1',
+37 silly install resolved        browserify: '~13.0.0',
+37 silly install resolved        'electron-packager': '~5.2.1',
+37 silly install resolved        'expect.js': '~0.3.1',
+37 silly install resolved        grunt: '~0.4.5',
+37 silly install resolved        'grunt-contrib-clean': '~0.7.0',
+37 silly install resolved        'grunt-contrib-copy': '~0.8.2',
+37 silly install resolved        'grunt-contrib-imagemin': '~0.5.0',
+37 silly install resolved        'grunt-contrib-jshint': '~0.12.0',
+37 silly install resolved        'grunt-contrib-less': '~1.2.0',
+37 silly install resolved        'grunt-contrib-watch': '~0.6.1',
+37 silly install resolved        'grunt-image-embed': '0.3.3',
+37 silly install resolved        'grunt-lineending': '~0.2.4',
+37 silly install resolved        'grunt-mocha-istanbul': '~3.0.1',
+37 silly install resolved        'grunt-mocha-test': '~0.12.7',
+37 silly install resolved        'grunt-plato': '~1.3.0',
+37 silly install resolved        'grunt-release': '~0.13.0',
+37 silly install resolved        istanbul: '~0.4.2',
+37 silly install resolved        mocha: '~2.4.5',
+37 silly install resolved        npm: '~3.7.2',
+37 silly install resolved        phantomjs: '~1.9.19',
+37 silly install resolved        supertest: '~0.15.0' },
+37 silly install resolved     engines: { node: '>=0.10' },
+37 silly install resolved     license: 'MIT',
+37 silly install resolved     main: 'public/main.js',
+37 silly install resolved     window:
+37 silly install resolved      { title: 'Ungit',
+37 silly install resolved        icon: 'icon.png',
+37 silly install resolved        toolbar: false,
+37 silly install resolved        frame: false,
+37 silly install resolved        show: false,
+37 silly install resolved        width: 1000,
+37 silly install resolved        height: 600,
+37 silly install resolved        position: 'center',
+37 silly install resolved        min_width: 400,
+37 silly install resolved        min_height: 200 },
+37 silly install resolved     gitHead: '2d777c2cadf53116017a77e60be8f6d12e36df28',
+37 silly install resolved     bugs: { url: 'https://github.com/FredrikNoren/ungit/issues' },
+37 silly install resolved     homepage: 'https://github.com/FredrikNoren/ungit#readme',
+37 silly install resolved     _id: 'ungit@0.10.1',
+37 silly install resolved     _shasum: '46baa2bbdb767bbd0c4ecc64b1167052b06dab28',
+37 silly install resolved     _from: 'ungit@latest',
+37 silly install resolved     _npmVersion: '2.14.4',
+37 silly install resolved     _nodeVersion: '4.1.1',
+37 silly install resolved     _npmUser: { name: 'fredriknoren', email: 'fredrik.jw.noren@gmail.com' },
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: '46baa2bbdb767bbd0c4ecc64b1167052b06dab28',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/ungit/-/ungit-0.10.1.tgz' },
+37 silly install resolved     maintainers: [ [Object] ],
+37 silly install resolved     _npmOperationalInternal:
+37 silly install resolved      { host: 'packages-9-west.internal.npmjs.com',
+37 silly install resolved        tmp: 'tmp/ungit-0.10.1.tgz_1455678520034_0.028495061211287975' },
+37 silly install resolved     directories: {},
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/ungit/-/ungit-0.10.1.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install ungit@0.10.1 into /usr/lib
+39 info installOne ungit@0.10.1
+40 verbose installOne of ungit to /usr/lib not in flight; installing
+41 verbose correctMkdir /home/kinasu/.npm/_locks correctMkdir not in flight; initializing
+42 verbose lock using /home/kinasu/.npm/_locks/ungit-beac736c2ee56213.lock for /usr/lib/node_modules/ungit
+43 silly install write writing ungit 0.10.1 to /usr/lib/node_modules/ungit
+44 verbose unbuild lib/node_modules/ungit
+45 silly gentlyRm /usr/lib/node_modules/ungit is being purged from base /usr
+46 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/ungit
+47 verbose tar unpack /home/kinasu/.npm/ungit/0.10.1/package.tgz
+48 verbose tar unpacking to /usr/lib/node_modules/ungit
+49 silly gentlyRm /usr/lib/node_modules/ungit is being purged
+50 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/ungit
+51 silly gunzTarPerm modes [ '775', '664' ]
+52 error tar.unpack untar error /home/kinasu/.npm/ungit/0.10.1/package.tgz
+53 verbose unlock done using /home/kinasu/.npm/_locks/ungit-beac736c2ee56213.lock for /usr/lib/node_modules/ungit
+54 verbose fstream_path /usr/lib/node_modules/ungit
+55 verbose fstream_type Directory
+56 verbose fstream_class DirWriter
+57 verbose stack Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/ungit'
+57 verbose stack     at Error (native)
+58 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+58 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+58 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+59 verbose cwd /home/kinasu/Progr/site1.3
+60 error Linux 4.2.0-36-generic
+61 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "ungit"
+62 error node v4.4.5
+63 error npm  v2.15.5
+64 error path /usr/lib/node_modules/ungit
+65 error code EACCES
+66 error errno -13
+67 error syscall mkdir
+68 error Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/ungit'
+68 error     at Error (native)
+68 error  { [Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/ungit']
+68 error   errno: -13,
+68 error   code: 'EACCES',
+68 error   syscall: 'mkdir',
+68 error   path: '/usr/lib/node_modules/ungit',
+68 error   fstream_type: 'Directory',
+68 error   fstream_path: '/usr/lib/node_modules/ungit',
+68 error   fstream_class: 'DirWriter',
+68 error   fstream_stack:
+68 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+68 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+68 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+69 error Please try running this command again as root/Administrator.
+70 verbose exit [ -13, true ]
+71 verbose unbuild lib/node_modules/ungit
+72 silly gentlyRm /usr/lib/node_modules/ungit is being purged from base /usr
+73 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/ungit
